@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<OutputType>WinExe</OutputType>
 		<TargetFramework>net10.0-windows10.0.26100.0</TargetFramework>
@@ -23,6 +23,7 @@
 		<GenerateTestArtifacts>False</GenerateTestArtifacts>
 		<AppxBundle>Always</AppxBundle>
 		<AppxBundlePlatforms>x86|x64|arm64</AppxBundlePlatforms>
+		<AppxBundleAutoResourcePackageQualifiers>Scale</AppxBundleAutoResourcePackageQualifiers>
 		<HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
 		<DefaultLanguage>en-US</DefaultLanguage>
 	</PropertyGroup>
