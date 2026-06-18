@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "CrispShot (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "CrispShot (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

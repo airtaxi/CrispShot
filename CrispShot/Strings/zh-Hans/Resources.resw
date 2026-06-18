@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Capture.AlphaAbsent" xml:space="preserve">
+    <value>无 Alpha 通道 — 保留系统剪贴板</value>
+  </data>
+  <data name="Capture.WgcFailed" xml:space="preserve">
+    <value>WGC 截图失败 — 保留系统剪贴板</value>
+  </data>
+  <data name="Tray.AlwaysRunAsAdministrator" xml:space="preserve">
+    <value>始终以管理员身份运行</value>
+  </data>
+  <data name="Tray.Exit" xml:space="preserve">
+    <value>退出</value>
+  </data>
+  <data name="Tray.Language.System" xml:space="preserve">
+    <value>系统默认</value>
+  </data>
+  <data name="Tray.LanguageGroup" xml:space="preserve">
+    <value>语言</value>
+  </data>
+  <data name="Tray.ProcessWhenNoAlpha" xml:space="preserve">
+    <value>也处理无 Alpha 通道的窗口</value>
+  </data>
+  <data name="Tray.RequiresAdministratorPostfix" xml:space="preserve">
+    <value> （需要以管理员身份运行）</value>
+  </data>
+  <data name="Tray.Shadow.High" xml:space="preserve">
+    <value>明显</value>
+  </data>
+  <data name="Tray.Shadow.Low" xml:space="preserve">
+    <value>少量</value>
+  </data>
+  <data name="Tray.Shadow.Medium" xml:space="preserve">
+    <value>适中</value>
+  </data>
+  <data name="Tray.Shadow.Off" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="Tray.ShadowEffect" xml:space="preserve">
+    <value>阴影效果</value>
+  </data>
+  <data name="Tray.StartWithWindows" xml:space="preserve">
+    <value>开机自动运行</value>
+  </data>
+</root>

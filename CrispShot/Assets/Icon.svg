@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4F46E5"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.22"/>
+      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="tileClip">
+      <rect x="0" y="0" width="512" height="512" rx="112" ry="112"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#tileClip)">
+    <rect x="0" y="0" width="512" height="512" fill="url(#tile)"/>
+    <rect x="0" y="0" width="512" height="512" fill="url(#gloss)"/>
+
+    <g stroke="#FFFFFF" stroke-width="48" stroke-linecap="round">
+      <path d="M256 290 L191 369"/>
+      <path d="M227 273 L126 256"/>
+      <path d="M227 239 L191 143"/>
+      <path d="M256 222 L321 143"/>
+      <path d="M285 239 L386 256"/>
+      <path d="M285 273 L321 369"/>
+    </g>
+
+    <polygon points="256,286 230,271 230,241 256,226 282,241 282,271" fill="#4338CA"/>
+
+    <circle cx="256" cy="256" r="170" fill="none" stroke="#FFFFFF" stroke-width="10" opacity="0.9"/>
+
+    <path d="M394 94 L400 112 L418 118 L400 124 L394 142 L388 124 L370 118 L388 112 Z" fill="#FFFFFF" opacity="0.95"/>
+  </g>
+</svg>
