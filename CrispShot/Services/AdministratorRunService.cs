@@ -14,6 +14,8 @@ public sealed class AdministratorRunService
     private const string ActivationProtocolName = "crispshot";
     private const string AdministratorScheduledTaskName = "CrispShot.Administrator";
 
+    public event EventHandler? RegistrationChanged;
+
     public bool IsCurrentProcessElevated
     {
         get
@@ -45,6 +47,7 @@ public sealed class AdministratorRunService
         {
             if (isEnabled) RegisterTask();
             else DeleteTask();
+            RegistrationChanged?.Invoke(this, EventArgs.Empty);
             return true;
         }
         catch (Exception exception)

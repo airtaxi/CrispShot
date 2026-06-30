@@ -41,8 +41,8 @@ public sealed class TrayHostWindow : Window
         _settingsService = new SettingsService();
         _localizationService = new LocalizationService(_settingsService);
         _localizationService.Initialize();
-        _startupTaskService = new StartupTaskService(_settingsService);
         _administratorRunService = new AdministratorRunService();
+        _startupTaskService = new StartupTaskService(_settingsService, _administratorRunService);
         _windowCaptureService = new WindowCaptureService();
         _shadowRendererService = new ShadowRendererService();
         _clipboardService = new ClipboardService();
