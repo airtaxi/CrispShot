@@ -7,6 +7,8 @@ It captures only the active window cleanly, and optionally applies a soft drop s
 
 [![Download from Microsoft Store](https://get.microsoft.com/images/en-US%20dark.svg)](https://apps.microsoft.com/detail/9P718PTBDJ0C)
 
+![CrispShot Showcase](.github/Showcase.png)
+
 ## Features
 
 - Capture the active window instantly with `Alt` + `Print Screen`
