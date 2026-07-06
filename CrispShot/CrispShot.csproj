@@ -26,6 +26,7 @@
 		<AppxBundleAutoResourcePackageQualifiers>Scale</AppxBundleAutoResourcePackageQualifiers>
 		<HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
 		<DefaultLanguage>en-US</DefaultLanguage>
+		<DefineConstants>DISABLE_XAML_GENERATED_MAIN</DefineConstants>
 	</PropertyGroup>
 
 

@@ -1,35 +1,26 @@
-using CrispShot.Services;
 using CrispShot.Views;
 using Microsoft.UI.Xaml;
 using Microsoft.Windows.AppLifecycle;
-using System.Diagnostics;
 
 namespace CrispShot;
 
 public partial class App : Application
 {
-    private TrayHostWindow? _trayHostWindow;
+    internal TrayHostWindow? _trayHostWindow;
 
     public App() => InitializeComponent();
 
-    protected override async void OnLaunched(LaunchActivatedEventArgs args)
+    protected override async void OnLaunched(LaunchActivatedEventArgs launchActivatedEventArgs)
     {
-        var currentAppActivationArguments = AppInstance.GetCurrent().GetActivatedEventArgs();
-        var administratorRunService = new AdministratorRunService();
-        if (administratorRunService.ShouldLaunchAsAdministrator(currentAppActivationArguments) && await administratorRunService.TryLaunchAsAdministratorAsync())
-        {
-            Process.GetCurrentProcess().Kill();
-            return;
-        }
+        _ = launchActivatedEventArgs;
+        await InitializeApplicationAsync(AppInstance.GetCurrent().GetActivatedEventArgs());
+    }
 
-        var currentInstance = AppInstance.FindOrRegisterForKey("CrispShot");
-        if (!currentInstance.IsCurrent)
-        {
-            await currentInstance.RedirectActivationToAsync(currentAppActivationArguments);
-            Process.GetCurrentProcess().Kill();
-            return;
-        }
+    internal void OnRedirectedActivation(AppActivationArguments appActivationArguments) => _ = InitializeApplicationAsync(appActivationArguments);
 
+    private async Task InitializeApplicationAsync(AppActivationArguments appActivationArguments)
+    {
+        _ = appActivationArguments;
         _trayHostWindow = new TrayHostWindow();
         _trayHostWindow.Activate();
         await _trayHostWindow.InitializeAsync();
