@@ -3,7 +3,7 @@
 🌐 [한국어](README.ko.md)
 
 CrispShot is a lightweight Windows tray utility that fixes the small background border that Windows' built-in `Alt` + `Print Screen` leaves around the active window.
-It captures only the active window cleanly, and optionally applies a soft drop shadow so your window screenshots look polished and ready to share.
+It captures only the active window cleanly, and can apply a soft drop shadow so the result looks finished.
 
 [![Download from Microsoft Store](https://get.microsoft.com/images/en-US%20dark.svg)](https://apps.microsoft.com/detail/9P718PTBDJ0C)
 

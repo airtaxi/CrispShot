@@ -3,7 +3,7 @@
 🌐 [English](README.md)
 
 CrispShot는 Windows의 `Alt` + `Print Screen` 캡처 시 활성 창 주변에 배경이 함께 캡처되던 불편함을 해결하는 가벼운 Windows 트레이 유틸리티입니다.
-활성 창만 깔끔하게 캡처하고, 선택적으로 그림자를 적용하여 바로 공유할 수 있는 미려한 창 스크린샷을 만들어줍니다.
+활성 창만 깔끔하게 캡처하고 선택적으로 그림자를 적용하여 바로 공유할 수 있는 미려한 창 스크린샷을 만들어줍니다.
 
 [![Microsoft Store에서 다운로드](https://get.microsoft.com/images/en-US%20dark.svg)](https://apps.microsoft.com/detail/9P718PTBDJ0C)
 
